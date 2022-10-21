@@ -19,8 +19,11 @@ class Visit extends Model
      * @var array
      */
     protected $fillable = [
-        'method', 'request', 'url', 'referer',
-        'languages', 'useragent', 'headers',
+        'method', 'url', 'referer',
+//       'request',
+//         'languages',
+        'useragent',
+//         'headers',
         'device', 'platform', 'browser', 'ip',
         'visitor_id', 'visitor_type',
     ];
@@ -30,11 +33,11 @@ class Visit extends Model
      *
      * @var array
      */
-    protected $casts = [
-        'request'   => 'array',
-        'languages' => 'array',
-        'headers'   => 'array',
-    ];
+//     protected $casts = [
+//         'request'   => 'array',
+//         'languages' => 'array',
+//         'headers'   => 'array',
+//     ];
 
     /**
      * Get the owning visitable model.
