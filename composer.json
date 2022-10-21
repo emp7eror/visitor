@@ -1,9 +1,9 @@
 {
-    "name": "emp7eror/visitor",
+    "name": "shetabit/visitor",
     "type": "library",
     "description": "Laravel visitor",
     "keywords": [
-        "emp7eror",
+        "shetabit",
         "visitor",
         "track laravel visitors",
         "trace laravel visitors",
@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "visitor\\Visitor\\": "src"
+            "Shetabit\\Visitor\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -40,7 +40,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "emp7eror\\Visitor\\Tests\\": "tests"
+            "Shetabit\\Visitor\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -51,10 +51,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "emp7eror\\Visitor\\Provider\\VisitorServiceProvider"
+                "Shetabit\\Visitor\\Provider\\VisitorServiceProvider"
             ],
             "aliases": {
-                "Visitor": "emp7eror\\Visitor\\Facade\\Visitor"
+                "Visitor": "Shetabit\\Visitor\\Facade\\Visitor"
             }
         }
     },
